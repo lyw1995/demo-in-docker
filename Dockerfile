@@ -1,0 +1,6 @@
+FROM iron/base
+MAINTAINER Track "24245@163.com"
+LABEL build_time="20181227171937"
+EXPOSE 8080
+ADD  demo-linux-amd64-20181227171937 /
+ENTRYPOINT ["./demo-linux-amd64-20181227171937"]

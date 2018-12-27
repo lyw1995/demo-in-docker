@@ -1,0 +1,7 @@
+version: '3' #docker compose版本
+services:
+    demo:
+      image: demo:latest
+      restart: always
+      ports:
+        - "8080:8080"
