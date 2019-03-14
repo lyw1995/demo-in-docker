@@ -8,7 +8,7 @@ rm demo-linux-amd64-* >& /dev/null
 
 # 编译linux可执行文件, 进行制作镜像
 export GOOS=linux
-go build -o demo-linux-amd64-$current_time
+go build -ldflags="-s -w" -o demo-linux-amd64-${current_time}
 export GOOS=darwin
 
 # Dockerfile生成
